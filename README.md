@@ -2,11 +2,18 @@
 
 ## Table of contents
 * [General info](#general-info)
+* [Requirements](#requirements)
 * [Technologies](#technologies)
 * [Setup](#setup)
+  - [Starting server](#starting-server)
+  - Setting up client side(#setting-up-client-side)
 
 ## General Info
 Classic ship game created using PHP, Socketo.me, JavaScript and HTML
+
+## Requirements
+* Composer
+* Apache Server
 
 ## Technologies
 * PHP 7.4
