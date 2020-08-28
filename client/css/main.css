@@ -1,0 +1,370 @@
+body,html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+#container
+{
+    width: 100%;
+    height: 100%;
+}
+
+#container_lobby
+{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+#rooms_list
+{
+    width: 96%;
+    padding: 0 2%;
+    max-height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+
+#rooms_list::-webkit-scrollbar 
+{
+    width: 10px;
+}
+
+#rooms_list::-webkit-scrollbar-track 
+{
+    background: gray;
+    border-radius: 10px;
+}
+
+#rooms_list::-webkit-scrollbar-thumb
+{
+    background-color: lawngreen; 
+    border-radius: 10px;
+}
+  
+ul,li
+{
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.li_color
+{
+    background-color: #E9E9E9;
+}
+
+p
+{
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.joinRoom
+{
+    width: 110px;
+    line-height: 28px;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    background-color: lawngreen;
+    text-align: center;
+    transition: 0.2s all ease-in-out;
+}
+
+.li_color .joinRoom
+{
+    border: 2px solid #E9E9E9;
+}
+
+#createRoom
+{
+    width: 160px;
+    line-height: 40px;
+    border-radius: 15px;
+    background-color: lawngreen;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #fff;
+    transition: 0.2s all ease-in-out;
+    position: absolute;
+    left: 45%;
+    bottom: 40px;
+}
+
+.joinRoom:hover, #createRoom:hover
+{
+    color: lawngreen;
+    background-color: #fff;
+    border: 2px solid lawngreen;
+    cursor: pointer;
+}
+
+.inactive
+{
+    border: 2px solid red;
+    background-color: red;
+}
+
+.inactive:hover
+{
+    color: #000;
+    border: 2px solid red;
+    background-color: red;
+    cursor: default;
+}
+
+/* GAME */
+#goBack
+{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    background-color: lawngreen;
+    text-align: center;
+    border: 2px solid lawngreen;
+    border-radius: 15px;
+    color: #fff;
+    top: 20px;
+    left: 20px;
+}
+
+#goBack:hover
+{
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.2s all ease-in-out;
+    color: lawngreen;
+}
+
+#goBack a
+{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#goBack a:hover
+{
+    color: lawngreen;
+}
+
+.game
+{
+   width: 100%; 
+}
+
+#game-title
+{
+    margin-bottom: 0;
+}
+
+h2
+{
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    margin-top: -15px;
+}
+
+#game_container
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.board
+{
+    width: 30%;
+    height: 30vw;
+}
+
+table
+{
+    width: 100%;
+    height: 100%;   
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    width: 9%;
+    height: 9%;
+}
+
+td {
+    border: 1px solid #000;
+    width: 9%;
+    height: 9%;
+}
+
+td:hover
+{
+    cursor: pointer;
+    background-color: #E0E0E0;
+}
+
+#board_enemy
+{
+    opacity: 0.4;
+    position: relative;
+}
+
+#gameClass:hover
+{
+    cursor: pointer;
+    background-color: #E0E0E0;
+}
+
+.td-inactive:hover
+{
+    cursor: default;
+    background-color: #fff;
+}
+
+#enemy-info
+{
+    top: -40px;
+    left: 20px;
+    color: red;
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    font-size: 40px;
+}
+
+#controls
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 3vw;
+}
+
+#ships
+{
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-start;
+    flex-wrap: wrap;
+}
+
+.ship
+{
+    position: relative;
+}
+
+.ship-body
+{
+    background-color: #00CC66;    
+    line-height: 2.5vw;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #00CC66;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.four-masted
+{
+    width: 10.8vw;
+}
+
+.three-masted
+{
+    width: 8.1vw;
+}
+
+.two-masted
+{
+    width: 5.4vw;
+}
+
+#right-side
+{
+    width: 30vw;
+}
+
+.delete-ship
+{
+    position: absolute;
+    top: -5px;
+    right: -3px;
+    color: red;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.delete-ship:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#ready-button
+{
+    width: 130px;
+    line-height: 40px;
+    background-color: lawngreen;
+    text-align: center;
+    border: 2px solid lawngreen;
+    border-radius: 15px;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#ready-button:hover
+{
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.2s all ease-in-out;
+    color: lawngreen;
+}
+
+.missed 
+{
+    background-image: url("../img/missed.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.hit
+{
+    background-image: url("../img/hit.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
