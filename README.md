@@ -6,7 +6,7 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
   - [Starting server](#starting-server)
-  - Setting up client side(#setting-up-client-side)
+  - [Setting up client side](#setting-up-client-side)
 
 ## General Info
 Classic ship game created using PHP, Socketo.me, JavaScript and HTML
