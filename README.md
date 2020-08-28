@@ -12,8 +12,8 @@
 Classic ship game created using PHP, Socketo.me, JavaScript and HTML
 
 ## Requirements
-* Composer
-* Apache Server
+* [Composer](https://getcomposer.org/)
+* Apache Server ([Xampp](https://www.apachefriends.org/pl/index.html))
 
 ## Technologies
 * PHP 7.4
